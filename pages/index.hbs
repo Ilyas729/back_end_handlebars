@@ -1,0 +1,40 @@
+<style>
+    body{
+        font-family: sans-serif;
+    }
+    table, th, td {
+        border: 1px solid #4c4c4c;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+    }
+</style>
+
+<h1>Users Management</h1>
+
+<h3>Total users: {{totalUsers}}</h3>
+
+<form action="/" method="post">
+   <input type="text" name="name" placeholder="Name">
+   <input type="text" name="surname" placeholder="Surname">
+   <input type="text" name="age" placeholder="Age">
+   <button></button>
+</form>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>surname</th>
+        <th>age</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <th>{{id}}</th>
+        <th>{{name}}</th>
+        <th>{{surname}}</th>
+        <th>{{age}}</th>
+    </tr>
+    {{/each}}
+</table>
