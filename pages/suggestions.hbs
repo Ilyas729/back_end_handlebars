@@ -1,0 +1,32 @@
+<main class="top">
+        <div class="card wide grow margin scrollable">
+            <div class="row between">
+                <h3> Suggestions </h3>
+            </div>
+            <hr>
+              {{#each comments}}
+            <div class="card">
+                <div class="row between">
+                    <span class="row">
+                        <span class="accent"> {{type}} </span>
+                        <b> {{group}} </b>
+                    </span>
+                    <span> {{date}} </span>
+                </div>
+                <p>
+                    {{message}}
+                <hr>
+                <div class="row between">
+                    <span>
+                        <b> {{status}} </b>
+                        
+                    </span>
+             
+                    <div class="row">
+                        <a href="/suggestions/{{id}}/accept"> Accept </a>
+                        <a class="warn" href="/suggestions/{{id}}/decline"> Decline </a>
+                    </div>
+                </div>
+            </div>
+    {{/each}}
+    </main>

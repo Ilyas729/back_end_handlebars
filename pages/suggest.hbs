@@ -1,0 +1,21 @@
+<main>
+        <div class="card wide-middle">
+            <div class="row between">
+                <h3> Suggest </h3>
+            </div>
+            <hr>
+
+            <form action="/suggest" method="post" class="column">
+                <input type="text" placeholder="Your name" name="name">
+                <input type="text" placeholder="Your group" name="group">
+                <select placeholder="Type" name="type">
+                    <option selected disabled> No selection </option>
+                    <option value="Suggestion"> Suggestion </option>
+                    <option value="Сomplaint"> Сomplaint </option>
+                </select>
+                <textarea rows="5" name="message"></textarea>
+                <button> Send </button>
+            </form>
+
+        </div>
+    </main>
